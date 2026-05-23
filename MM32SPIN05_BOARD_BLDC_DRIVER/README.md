@@ -1,33 +1,19 @@
 # MM32SPIN05 based Hoberboard hack
 
-This project is EFeru Hoverboard hack clone for MM32SPIN05 (https://github.com/EFeru/hoverboard-firmware-hack-FOC)
-<img src="hardware/IMG_6922.JPG">
+这个项目克隆至：trondin/MM32SPIN05_Hoberboard_hack(https://github.com/trondin/MM32SPIN05_Hoberboard_hack)，做了些修改，修复了原项目中关于温度值的获取等，并修改代码可支持副板烧录运行，并将原来的电压环更改为了支持转速闭环。
+写了对应的 python 测试代码：py 目录下。
 
-Only UART control is functional.
-Please check here https://github.com/EFeru/hoverboard-firmware-hack-FOC/tree/main/Arduino/hoverserial for details.
-<img src="hardware/IMG_6918.JPG">
+## 编译及烧录
+### 使用 VSCODE+PlatformIO
+在目录下执行 `make` 即可
+### 使用 `pyocd flash -t mm32spin05pf firmware.hex` 烧录
+> 若是新板子，请先擦除芯片，芯片有保护，第一次是烧不进去的，原固件也无法下载的  
+<img src="hardware/connection1.png">  
 
-TRQ_MODE and SPD_MODE are not functional because of hardware limitation - looks like originally board was designed for MCU with integrated opamp.
+## 接线
+### 各插座如下：  
+<img src="hardware/pins.png">  
+<img src="hardware/connection2.png">  
 
-Visual Studio code with Platformio plugin can be used for code design, but it generates not functional binary.
-Please use "make" to compile sources.
-<img src="hardware/bild.png">
-
-Use "pyocd flash -t mm32spin05pf firmware.hex" to upload binary.
-<img src="hardware/upload.png">
-
-GCC compilation for MM32SPIN05 adapted by me, based on Mindmotion packet for Keil uVision.
-If any mistakes - feel free to fix yourself.
-
-Board view:
-<img src="hardware/IMG_6858.JPG">
-Pinout:
-<img src="hardware/pinout.JPG">
-Schematic:
-<img src="hardware/MM32SPIN05_CTRL.jpg">
-
-I am sorry about mistakes in the reversed schematic, if any :)
-
-Disclaimer:
-no guarantee, no support.
-
+### 主板大致原理图如下：
+<img src="hardware/MM32SPIN05_CTRL.jpg">  
