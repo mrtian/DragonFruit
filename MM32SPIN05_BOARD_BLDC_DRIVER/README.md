@@ -14,6 +14,6 @@
 ### 各插座如下：  
 <img src="hardware/pins.png">  
 <img src="hardware/connection2.png">  
-
+<img src="hardware/con3.png">  
 ### 主板大致原理图如下：
 <img src="hardware/MM32SPIN05_CTRL.jpg">  
