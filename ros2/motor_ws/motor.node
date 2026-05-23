@@ -1,1 +1,1 @@
-sudo -E bash -c "source /opt/ros/humble/setup.bash && export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp && taskset -c 7 chrt -f 99 python3 /home/orangepi/motor_ws/src/motor_driver/motor_driver/motor_node.py"
+sudo -E bash -c "source /opt/ros/humble/setup.bash && export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp && taskset -c 7 chrt -f 99 python3 ./motor_dr.py"
