@@ -1,0 +1,13 @@
+.pio
+.vscode
+doc
+.DS_Store
+build
+log
+install
+libuvc
+*.log
+src/build
+src/install
+src/log
+src/*.log
