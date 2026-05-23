@@ -2,3 +2,4 @@
 .vscode
 doc
 .DS_Store
+py/__*

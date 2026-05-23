@@ -6,4 +6,5 @@ build
 install
 log
 *.log
+*.out
 src/ros2_astra_camera

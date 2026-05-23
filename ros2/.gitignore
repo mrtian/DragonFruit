@@ -2,3 +2,5 @@
 .vscode
 doc
 .DS_Store
+*.out
+ros2/camera_ws/src/ros2_astra_camera
