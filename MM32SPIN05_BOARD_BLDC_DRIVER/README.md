@@ -1,6 +1,6 @@
 # MM32SPIN05 based Hoberboard hack
 
-这个项目克隆至：trondin/MM32SPIN05_Hoberboard_hack(https://github.com/trondin/MM32SPIN05_Hoberboard_hack)，做了些修改，修复了原项目中关于温度值的获取等，并修改代码可支持副板烧录运行，并将原来的电压环更改为了支持转速闭环。
+这个项目克隆至：trondin/MM32SPIN05_Hoberboard_hack (https://github.com/trondin/MM32SPIN05_Hoberboard_hack) ,做了些修改，修复了原项目中关于温度值的获取等，并修改代码可支持副板烧录运行，并将原来的电压环更改为了支持转速闭环。
 写了对应的 python 测试代码：py 目录下。
 
 ## 编译及烧录
